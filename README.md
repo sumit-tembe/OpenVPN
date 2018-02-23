@@ -43,7 +43,8 @@ Step 7: User authentication and certification validation.
 
 Certificate verification (Script to ensure users using only his/her creds and cert to access openvpn and user creds validation)
     
-    /etc/openvpn/scripts/auth.sh
+/etc/openvpn/scripts/auth.sh
+
     #!/bin/bash
 
     dn="cn=users,dc=vpn,dc=local"	#Change dc depends upon your AD domain

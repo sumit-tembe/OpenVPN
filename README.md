@@ -1,27 +1,27 @@
 # OpenVPN
 
-This document assumes OpenVPN Server is already installed and configured
-If not follow the given link- How to setup OpenVpn Server?
+This document assumes OpenVPN Server is already installed and configured (minimum two)
+If not Follow the given link - https://help.ubuntu.com/lts/serverguide/openvpn.html
 
 Step 1: Set Up CA in Windows AD
 
-    Follow the given link - Setup CA in Windows AD
+    Follow the given doc - Setting Up a Certification Authority.docx	
 
 Step 2: Create new Certificate template for VPN connection
 
-    Follow the given link - Create new certificate template
+    Follow the given doc - Creating a new certificate template for User certificates.docx
 
 Step 3: Configure User certificate Auto-Enrollment
 
-    Follow the given link - User certificate Auto-Enrollment
+    Follow the given doc - Auto-Enrollment.docx
 
 Step 4: Export CA certificate
 
-    Follow the given link - Export CA certificate
+    Follow the given doc - Export CA Certificate.docx
 
 Step 5: Export User certificate
 
-    Follow the given link - Export User certificate
+    Follow the given doc - Export AD cert _ key.docx
 
 Step 6: Modify OpenVpn to use AD CA certificates.
 
@@ -69,7 +69,7 @@ Certificate verification (Script to ensure users using only his/her creds and ce
 Step 8: Setup OpenVpn server in HA (Active-Passive mode)
 
 Assuming you have two OpenVpn servers already configured.
-Follow the given link - Configure HA Virtual IP
+Follow the given doc - HA Virtual IP (keepalived).docx
 
     Change in /etc/openvpn/server.conf:-
 	local <your Virtual HA ip>	#Change it with your HA Virtual IP
@@ -93,7 +93,7 @@ Comment ns-cert-type server
 
 Step 10: Ensure User will get same IP from both OpenVpn servers
 
-Follow the given link - Setup External Storage
+Follow the given doc - How To Set Up and Configure NFS on Ubuntu 16.04.docx
 
     Step 11: Restart the OpenVpn server
     $ service openvpn@server restart
